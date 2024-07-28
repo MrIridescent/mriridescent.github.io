@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr Iridescent Portfolio Listing</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <h1>My Coding Projects from Web Dev Class 2021 -to- FullStack Software Eng Class in 2024</h1>
+    <br>
+    <p>This is my updated Github pages Repo for all Coding projects done between 2021 and 2024 during my learning process, classwork and Clients Projects</p>
+    <ul id="directoryList"></ul>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var directoryList = [
+                { name: "file1.txt", type: "file" },
+                { name: "file2.jpg", type: "file" },
+                { name: "file2.jpg", type: "file" },
+                { name: "file2.jpg", type: "file" },
+                { name: "file2.jpg", type: "file" },
+                { name: "file2.jpg", type: "file" },
+                { name: "file2.jpg", type: "file" },
+                { name: "file2.jpg", type: "file" },
+                { name: "2021 portfolio design", type: "directory" },
+                { name: "bootstraptest-project-2021", type: "directory" },
+                { name: "directory1", type: "directory" },
+                { name: "directory1", type: "directory" },
+                { name: "directory1", type: "directory" },
+                { name: "directory1", type: "directory" },
+                { name: "directory2", type: "directory" }
+            ];
+
+            var ul = document.getElementById("directoryList");
+            directoryList.forEach(function(item) {
+                var li = document.createElement("li");
+                var link = document.createElement("a");
+                link.textContent = item.name;
+                link.href = item.type === "directory" ? item.name + "/" : item.name;
+                link.target = "_blank";
+                li.appendChild(link);
+                ul.appendChild(li);
+            });
+        });
+    </script>
+</body>
+</html>

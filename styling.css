@@ -1,0 +1,9 @@
+body { font-family: Arial, sans-serif; }
+ul { list-style-type: none; padding: 0; }
+li { margin: 5px 0; }
+h1 { text-align: center; color: rgb(255, 123, 0); }
+a { text-decoration: none; color: blue; }
+a:hover { text-decoration: underline; }
+p{text-align: center;}
+
+#directoryList {align-items: center;}
