@@ -1,0 +1,6 @@
+# All robots allowed
+User-agent: *
+Allow: /
+
+# Sitemap files
+Sitemap: https://mriridescent.africa/sitemap.xml
