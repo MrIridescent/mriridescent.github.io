@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Behemoth - The Ultimate Marketing Workstation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
+    <style>
+        :root {
+            --primary: #25D366;
+            --primary-glow: rgba(37, 211, 102, 0.4);
+            --secondary: #128C7E;
+            --accent: #34B7F1;
+            --bg: #030303;
+            --surface: #0a0a0a;
+            --card-bg: rgba(255, 255, 255, 0.03);
+            --text: #ffffff;
+            --text-dim: #94a3b8;
+            --glass: rgba(10, 10, 10, 0.7);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .noise-bg {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: url('https://grainy-gradients.vercel.app/noise.svg');
+            opacity: 0.05;
+            pointer-events: none;
+            z-index: 999;
+        }
+
+        .navbar {
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-family: 'Syncopate', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: 4px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .hero {
+            position: relative;
+            padding: 160px 5% 100px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -20%; left: 50%;
+            transform: translateX(-50%);
+            width: 80%; height: 80%;
+            background: radial-gradient(circle, var(--primary-glow) 0%, transparent 70%);
+            z-index: -1;
+            filter: blur(80px);
+        }
+
+        h1 {
+            font-family: 'Syncopate', sans-serif;
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 700;
+            margin-bottom: 24px;
+            background: linear-gradient(to bottom, #fff 30%, var(--primary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -2px;
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            color: var(--text-dim);
+            max-width: 800px;
+            margin: 0 auto 40px;
+            font-weight: 300;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+            padding: 40px 5%;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 48px;
+            border-radius: 32px;
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            border-color: var(--primary);
+            background: rgba(37, 211, 102, 0.02);
+            transform: translateY(-8px);
+        }
+
+        .card span {
+            font-size: 48px;
+            color: var(--primary);
+            margin-bottom: 24px;
+            display: inline-block;
+            background: rgba(37, 211, 102, 0.1);
+            padding: 15px;
+            border-radius: 20px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 18px 36px;
+            border-radius: 100px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: #000;
+            box-shadow: 0 8px 32px var(--primary-glow);
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 48px var(--primary-glow);
+        }
+
+        .btn-outline {
+            border: 1px solid rgba(255,255,255,0.1);
+            color: #fff;
+            background: rgba(255,255,255,0.02);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255,255,255,0.05);
+            border-color: var(--primary);
+        }
+
+        .section-label {
+            color: var(--primary);
+            font-weight: 700;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .map-box {
+            background: #080808;
+            border: 1px solid #111;
+            border-radius: 40px;
+            padding: 80px 5%;
+            margin: 100px 5%;
+            text-align: center;
+        }
+
+        .architect-section {
+            padding: 120px 5%;
+            background: linear-gradient(to bottom, transparent, rgba(37, 211, 102, 0.03));
+        }
+
+        .architect-profile {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--glass);
+            border-radius: 40px;
+            border: 1px solid rgba(255,255,255,0.05);
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            overflow: hidden;
+            backdrop-filter: blur(40px);
+        }
+
+        .profile-img {
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 120px;
+            color: #000;
+        }
+
+        .profile-content { padding: 60px; }
+
+        .tag {
+            background: rgba(37, 211, 102, 0.1);
+            color: var(--primary);
+            padding: 6px 16px;
+            border-radius: 100px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-right: 10px;
+        }
+
+        .footer {
+            padding: 80px 5% 40px;
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        @media (max-width: 900px) {
+            .architect-profile { grid-template-columns: 1fr; }
+            .profile-img { height: 200px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="noise-bg"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <span class="material-symbols-rounded" style="font-size: 32px;">rocket_launch</span>
+            BEHEMOTH
+        </div>
+        <div style="display: flex; gap: 20px;">
+            <a href="https://github.com/MrIridescent/whatsapp-behemoth" class="btn btn-outline" style="padding: 12px 24px; font-size: 0.8rem;">GITHUB</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-image" style="width: 300px; height: 300px; background: radial-gradient(circle, var(--primary) 0%, transparent 70%); margin: 0 auto 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 100px var(--primary-glow);">
+            <span class="material-symbols-rounded" style="font-size: 150px; color: #000;">hub</span>
+        </div>
+        <span class="section-label">Evolution 2026</span>
+        <h1>THE MARKETING<br>BEHEMOTH</h1>
+        <p>A powerhouse WhatsApp workstation architected for high-velocity outreach, multi-account dominance, and autonomous AI-driven engagement.</p>
+        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+            <a href="#download" class="btn btn-primary">Initialize Behemoth</a>
+            <a href="https://github.com/MrIridescent/whatsapp-behemoth" class="btn btn-outline">Explore Codebase</a>
+        </div>
+    </header>
+
+    <section class="grid">
+        <div class="card">
+            <span class="material-symbols-rounded">layers</span>
+            <h3>Multi-Session Core</h3>
+            <ul style="list-style:none; color:var(--text-dim); font-size: 0.9rem; margin-top:15px; text-align:left;">
+                <li>• Isolated cookie partitions</li>
+                <li>• Concurrent active sessions</li>
+                <li>• Individual User-Agent spoofing</li>
+                <li>• One-click account switching</li>
+            </ul>
+        </div>
+        <div class="card">
+            <span class="material-symbols-rounded">bolt</span>
+            <h3>Outreach Engine</h3>
+            <ul style="list-style:none; color:var(--text-dim); font-size: 0.9rem; margin-top:15px; text-align:left;">
+                <li>• CSV/TXT bulk importing</li>
+                <li>• Randomized human-like delays</li>
+                <li>• Account rotation (Anti-Ban)</li>
+                <li>• Real-time progress monitoring</li>
+            </ul>
+        </div>
+        <div class="card">
+            <span class="material-symbols-rounded">psychology</span>
+            <h3>AI Pro-Reply</h3>
+            <ul style="list-style:none; color:var(--text-dim); font-size: 0.9rem; margin-top:15px; text-align:left;">
+                <li>• GPT-4o / Claude 3.5 Integration</li>
+                <li>• Heuristic chat summarization</li>
+                <li>• Professional draft generation</li>
+                <li>• Context-aware auto-responses</li>
+            </ul>
+        </div>
+        <div class="card">
+            <span class="material-symbols-rounded">database</span>
+            <h3>Member Extractor</h3>
+            <ul style="list-style:none; color:var(--text-dim); font-size: 0.9rem; margin-top:15px; text-align:left;">
+                <li>• Deep-scroll DOM harvesting</li>
+                <li>• Automatic duplicate removal</li>
+                <li>• Export to TXT/CSV instantly</li>
+                <li>• Group intelligence gathering</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="map-box">
+        <span class="section-label">Architecture Map</span>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-top: 40px;">
+            <div>
+                <h4 style="margin-bottom:10px">FRONTEND</h4>
+                <p style="color:var(--text-dim); font-size: 0.9rem;">Electron Glass v3<br>Material UI 6.x<br>Tailwind Motion</p>
+            </div>
+            <div>
+                <h4 style="margin-bottom:10px">BACKEND</h4>
+                <p style="color:var(--text-dim); font-size: 0.9rem;">Node.js 20.x<br>TypeScript 5.x<br>Isolated Partitions</p>
+            </div>
+            <div>
+                <h4 style="margin-bottom:10px">AUTOMATION</h4>
+                <p style="color:var(--text-dim); font-size: 0.9rem;">DOM Synthesis<br>AI LLM Hooks<br>Campaign Orchestrator</p>
+            </div>
+            <div>
+                <h4 style="margin-bottom:10px">SECURITY</h4>
+                <p style="color:var(--text-dim); font-size: 0.9rem;">Stealth Headers<br>Proxy Rotation<br>Anti-Fingerprinting</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="architect" class="architect-section">
+        <div class="architect-profile">
+            <div class="profile-img">
+                <span class="material-symbols-rounded">terminal</span>
+            </div>
+            <div class="profile-content">
+                <span class="section-label">The Visionary</span>
+                <h2 style="font-size: 2.5rem; margin-bottom: 15px;">@MrIridescent</h2>
+                <div style="margin-bottom: 25px;">
+                    <span class="tag">System Architect</span>
+                    <span class="tag">Automation Expert</span>
+                    <span class="tag">Lead Dev</span>
+                </div>
+                <p style="color: var(--text-dim); font-size: 1.1rem; margin-bottom: 30px;">
+                    Specializing in high-performance autonomous systems and decentralized communication layers. 
+                    Behemoth is the culmination of years of research into digital outreach optimization and workflow streamlining.
+                </p>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; border-top: 1px solid #222; padding-top: 30px;">
+                    <div>
+                        <h5 style="color:var(--primary); margin-bottom:10px">EXPERTISE</h5>
+                        <ul style="list-style:none; font-size: 0.9rem; color:var(--text-dim);">
+                            <li>• Distributed Networks</li>
+                            <li>• AI Implementation</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 style="color:var(--primary); margin-bottom:10px">CONTACT</h5>
+                        <a href="https://github.com/MrIridescent" style="color:var(--text-dim); text-decoration:none; font-size: 0.9rem;">GitHub Portfolio &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="support" style="padding: 100px 5%; text-align: center; background: rgba(37, 211, 102, 0.02);">
+        <span class="section-label">Support the Mission</span>
+        <h2 style="font-family:'Syncopate'; font-size: 2.5rem; margin-bottom: 20px;">FUEL THE REVOLUTION</h2>
+        <p style="color: var(--text-dim); max-width: 600px; margin: 0 auto 40px;">If Behemoth has accelerated your growth, consider supporting its continued evolution. Every contribution powers next-gen automation.</p>
+        
+        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 50px;">
+            <a href="https://www.buymeacoffee.com/mriridescent" class="btn btn-primary" style="background: #FFDD00; color: #000;">
+                <span class="material-symbols-rounded">coffee</span> Buy Me a Coffee
+            </a>
+            <a href="https://github.com/sponsors/MrIridescent" class="btn btn-outline">
+                <span class="material-symbols-rounded">favorite</span> GitHub Sponsors
+            </a>
+        </div>
+
+        <div style="max-width: 800px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+            <div style="background: var(--surface); border: 1px solid #222; padding: 25px; border-radius: 20px; text-align: left;">
+                <h4 style="color: var(--primary); margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
+                    <span class="material-symbols-rounded">currency_bitcoin</span> BITCOIN
+                </h4>
+                <code style="display: block; background: #000; padding: 12px; border-radius: 8px; font-size: 0.8rem; word-break: break-all; border: 1px solid #333;">bc1qgchnmsrn7sqkan8h2xvjxfadz2vkdzqvecmtfu</code>
+            </div>
+            <div style="background: var(--surface); border: 1px solid #222; padding: 25px; border-radius: 20px; text-align: left;">
+                <h4 style="color: var(--accent); margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
+                    <span class="material-symbols-rounded">token</span> ETHEREUM
+                </h4>
+                <code style="display: block; background: #000; padding: 12px; border-radius: 8px; font-size: 0.8rem; word-break: break-all; border: 1px solid #333;">0x6041361e3Be66942c3715e273a38C5FC3063Dfb2</code>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" style="padding: 100px 5%; text-align: center;">
+        <h2 style="font-family:'Syncopate'; font-size: 2.5rem; margin-bottom: 40px;">CHOOSE YOUR DEPLOYMENT</h2>
+        <div style="display: flex; justify-content: center; gap: 25px; flex-wrap: wrap;">
+            <a href="https://github.com/MrIridescent/whatsapp-behemoth/releases/latest" class="btn btn-outline">
+                <span class="material-symbols-rounded">terminal</span> Linux (Debian)
+            </a>
+            <a href="https://github.com/MrIridescent/whatsapp-behemoth/releases/latest" class="btn btn-outline">
+                <span class="material-symbols-rounded">window</span> Windows (x64)
+            </a>
+            <a href="https://github.com/MrIridescent/whatsapp-behemoth/releases/latest" class="btn btn-outline">
+                <span class="material-symbols-rounded">laptop_mac</span> macOS (Universal)
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p style="color: var(--text-dim); font-size: 0.9rem;">
+            &copy; 2026 WhatsApp Behemoth. Architected with precision by <strong>@MrIridescent</strong>.<br>
+            Designed for those who demand excellence in communication.
+        </p>
+    </footer style="margin-bottom: 100px;">
+</body>
+</html>
