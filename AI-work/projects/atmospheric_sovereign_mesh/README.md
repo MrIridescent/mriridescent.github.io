@@ -17,7 +17,7 @@ A core module within the **2026-2030 Strategic AI Ecosystem**. This component pr
 3. Consult `DOCS.md` and `MANUAL.md` for detailed configuration.
 
 ## 🖼️ Visual Guide
-Open `INFOGRAPHIC.html` in your browser for a comprehensively nuanced and detailed overview of how this module works and why it is essential.
+Open `index.html` in your browser for a comprehensively nuanced and detailed overview of how this module works and why it is essential.
 
 ---
 **Maintained by**: David Akpoviroro Oke (MrIridescent)
