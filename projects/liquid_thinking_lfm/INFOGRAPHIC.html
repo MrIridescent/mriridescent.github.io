@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquid Thinking LFM Infographic (2026)</title>
+    <style>
+        :root {
+            --primary: #00BFFF; /* Deep Sky Blue (Liquid) */
+            --secondary: #1C1C1C; /* Dark Gray */
+            --accent: #FF4500; /* Orange Red (Dynamic) */
+            --text: #F0F8FF; /* Alice Blue */
+            --bg: #0D0D0D; /* Jet Black */
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            border: 2px solid var(--primary);
+            padding: 40px;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #111, #001f3f);
+            box-shadow: 0 0 50px rgba(0, 191, 255, 0.2);
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+        h1 { color: var(--primary); text-transform: uppercase; font-size: 2.5rem; letter-spacing: 5px; margin: 0; }
+        .branding { font-style: italic; color: #888; margin-top: 15px; font-size: 1.1rem; }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+        .card {
+            background: rgba(255,255,255,0.03);
+            padding: 25px;
+            border-radius: 12px;
+            border-top: 5px solid var(--primary);
+            transition: transform 0.3s ease;
+        }
+        .card:hover { transform: translateY(-10px); background: rgba(255,255,255,0.05); }
+        .card h2 { color: var(--primary); font-size: 1.3rem; margin-top: 0; }
+        
+        .visual-flow {
+            margin: 50px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .circle {
+            width: 120px;
+            height: 120px;
+            border: 3px solid var(--primary);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 0.9rem;
+            background: rgba(0, 191, 255, 0.1);
+        }
+        .arrow { font-size: 2rem; color: var(--primary); }
+
+        .performance-bar {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+        .perf-item {
+            flex: 1;
+        }
+        .perf-value { font-size: 2.8rem; font-weight: 900; color: var(--primary); }
+        .perf-label { font-size: 0.85rem; text-transform: uppercase; color: #aaa; letter-spacing: 1px; }
+        
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 1rem;
+            color: #444;
+            border-top: 1px solid #222;
+            padding-top: 30px;
+        }
+        .liquid-text { background: linear-gradient(90deg, #00BFFF, #0077be); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Liquid Thinking LFM</h1>
+            <div class="branding">Designed by David Akpoviroro Oke (MrIridescent)</div>
+        </header>
+
+        <div class="grid">
+            <div class="card">
+                <h2>1. Liquid Time-Constant (LTC) Cells</h2>
+                <p>Features <span class="liquid-text">Time-Continuous</span> state dynamics. Replaces static weights with ODE-based reasoning loops for 2026 industrial and medical edge.</p>
+            </div>
+            <div class="card">
+                <h2>2. System 2 Reasoning On-Device</h2>
+                <p>Enables <span class="liquid-text">High-Fidelity Chain-of-Thought (CoT)</span> distillation in a KB-scale memory footprint. No cloud handshake required for mission-critical logic.</p>
+            </div>
+            <div class="card">
+                <h2>3. Multi-NPU Optimization</h2>
+                <p>Architected for the <span class="liquid-text">Qualcomm Dragonwing IQ</span>. Utilizes Euler discretization for C-level performance on fixed-point NPUs.</p>
+            </div>
+        </div>
+
+        <div class="visual-flow">
+            <div class="circle">Token Sequence Input</div>
+            <div class="arrow">➔</div>
+            <div class="circle">Liquid Layer 1 (Tau-Gate)</div>
+            <div class="arrow">➔</div>
+            <div class="circle">Liquid Layer N (ODE Update)</div>
+            <div class="arrow">➔</div>
+            <div class="circle">Reasoning Output</div>
+        </div>
+
+        <div class="performance-bar">
+            <div class="perf-item">
+                <div class="perf-value"><1GB</div>
+                <div class="perf-label">Memory Footprint</div>
+            </div>
+            <div class="perf-item">
+                <div class="perf-value"><50ms</div>
+                <div class="perf-label">Reasoning Latency</div>
+            </div>
+            <div class="perf-item">
+                <div class="perf-value">0.99</div>
+                <div class="perf-label">Energy ROI (Rel to C)</div>
+            </div>
+            <div class="perf-item">
+                <div class="perf-value">1.2B</div>
+                <div class="perf-label">Param Count</div>
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2026 David Akpoviroro Oke (MrIridescent) | Portfolio of The Creative Renaissance Man | Strategic AI Roadmap
+        </footer>
+    </div>
+</body>
+</html>

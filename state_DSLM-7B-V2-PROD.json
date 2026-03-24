@@ -1,0 +1,56 @@
+{
+    "66884263-b1b5-4813-96d8-4cd3bc9d788f": {
+        "task_id": "66884263-b1b5-4813-96d8-4cd3bc9d788f",
+        "goal": "Design a sovereign AI governance model for 2026",
+        "steps": [
+            {
+                "id": "97fd6310-ac26-4cfa-82f7-b988bc9ea942",
+                "description": "Path A: Direct approach",
+                "action": "ANALYZE",
+                "status": "TaskStatus.COMPLETED",
+                "result": "Result of ANALYZE",
+                "confidence": 0.95,
+                "critique": "Step follows domain guidelines.",
+                "timestamp": "2026-03-17 13:52:43.222154",
+                "parent_id": null
+            },
+            {
+                "id": "a92b6b96-91b8-4192-9a71-b3db99a546d4",
+                "description": "Verify logic",
+                "action": "VALIDATE",
+                "status": "TaskStatus.COMPLETED",
+                "result": "Result of VALIDATE",
+                "confidence": 0.95,
+                "critique": "Step follows domain guidelines.",
+                "timestamp": "2026-03-17 13:52:43.322825",
+                "parent_id": "97fd6310-ac26-4cfa-82f7-b988bc9ea942"
+            },
+            {
+                "id": "f3435d6c-fb96-4eff-a26a-0d5aaa98cea0",
+                "description": "Synthesize final answer",
+                "action": "SYNTHESIZE",
+                "status": "TaskStatus.COMPLETED",
+                "result": "Result of SYNTHESIZE",
+                "confidence": 0.95,
+                "critique": "Step follows domain guidelines.",
+                "timestamp": "2026-03-17 13:52:43.426304",
+                "parent_id": "a92b6b96-91b8-4192-9a71-b3db99a546d4"
+            }
+        ],
+        "constraints": [
+            {
+                "name": "NO_HALLUCINATION",
+                "is_hard": true,
+                "validator": "grounding_check"
+            },
+            {
+                "name": "LEGAL_COMPLIANCE",
+                "is_hard": true,
+                "validator": "legal_audit"
+            }
+        ],
+        "metadata": {
+            "status": "completed"
+        }
+    }
+}

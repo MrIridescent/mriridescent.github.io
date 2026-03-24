@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embodied VLA Engine - 2026 Robotic Intelligence Infographic</title>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0d0d0d; color: #f2f2f2; margin: 0; padding: 20px; }
+        .infographic { max-width: 1000px; margin: auto; border: 2px solid #2a2a2a; border-radius: 12px; background: #1a1a1a; overflow: hidden; }
+        .header { background: linear-gradient(90deg, #6366f1, #a855f7); padding: 30px; text-align: center; }
+        .header h1 { margin: 0; font-size: 2.5em; letter-spacing: 1px; }
+        .branding { font-size: 0.9em; opacity: 0.8; margin-top: 5px; }
+        .content { padding: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        .card { background: #262626; padding: 25px; border-radius: 10px; border: 1px solid #333; }
+        .card h2 { color: #818cf8; margin-top: 0; }
+        .system-split { grid-column: span 2; display: flex; justify-content: space-around; background: #1e1b4b; padding: 20px; border-radius: 10px; border: 1px solid #4338ca; }
+        .system-box { text-align: center; width: 45%; }
+        .system-title { font-size: 1.2em; font-weight: bold; color: #c7d2fe; margin-bottom: 10px; }
+        .flow { grid-column: span 2; position: relative; padding: 20px 0; text-align: center; }
+        .flow-step { display: inline-block; width: 18%; background: #312e81; padding: 15px; margin: 5px; border-radius: 8px; font-size: 0.85em; }
+        .arrow { font-size: 1.5em; color: #6366f1; vertical-align: middle; }
+        .footer { text-align: center; padding: 20px; font-size: 0.8em; color: #666; border-top: 1px solid #2a2a2a; }
+        .highlight { color: #fbbf24; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="infographic">
+        <div class="header">
+            <h1>Embodied VLA Engine (2026)</h1>
+            <div class="branding">Designed by David Akpoviroro Oke (MrIridescent)</div>
+        </div>
+
+        <div class="content">
+            <div class="system-split">
+                <div class="system-box">
+                    <div class="system-title">SYSTEM 1: REACTIVE</div>
+                    <p>Low-latency (20ms) visuomotor mapping for safety overrides and collision avoidance. <span class="highlight">"Immediate Reflex"</span></p>
+                </div>
+                <div class="system-box">
+                    <div class="system-title">SYSTEM 2: DELIBERATIVE</div>
+                    <p>High-latency (200ms+) planning via Embodied Chain-of-Thought (CoT) and hierarchical reasoning. <span class="highlight">"Deep Thinking"</span></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Semantic Perception</h2>
+                <p>Moves beyond raw LiDAR points to <strong>3D Scene Graphs</strong>. Understands:
+                    <ul>
+                        <li>Fragility ("Beaker")</li>
+                        <li>Accessibility ("Open Door")</li>
+                        <li>Safety ("Fire Exit")</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Goal Fulfillment</h2>
+                <p>Natural Language → Action Translation.
+                    <br><br>
+                    <em>"Secure the lab samples and ensure all corridors are clear."</em>
+                    <br><br>
+                    The VLA Engine decomposes this into 4-8 discrete robotic actions with constraint checking.
+                </p>
+            </div>
+
+            <div class="flow">
+                <h2>Operational Pipeline</h2>
+                <div class="flow-step">Perception (Scan)</div> <span class="arrow">→</span>
+                <div class="flow-step">System 1 (Safe?)</div> <span class="arrow">→</span>
+                <div class="flow-step">System 2 (Plan)</div> <span class="arrow">→</span>
+                <div class="flow-step">Execution (VLA)</div> <span class="arrow">→</span>
+                <div class="flow-step">Recovery (Self-Heal)</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            © 2026 Future-Proofing Strategic Initiative. All Rights Reserved.
+        </div>
+    </div>
+</body>
+</html>

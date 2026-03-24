@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reputation Ledger (M2M Trust) - Strategic Infographic 2026</title>
+    <style>
+        :root {
+            --primary: #34d399;
+            --secondary: #10b981;
+            --bg: #064e3b;
+            --text: #ecfdf5;
+            --accent: #ef4444;
+            --node: #065f46;
+            --block: #064e3b;
+            --merkle: #10b981;
+        }
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', system-ui, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            background: rgba(6, 78, 59, 0.9);
+            border: 2px solid var(--primary);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 0 40px rgba(52, 211, 153, 0.3);
+            position: relative;
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid rgba(52, 211, 153, 0.3);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+        h1 {
+            color: var(--primary);
+            font-size: 2.2em;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin: 0;
+        }
+        .branding {
+            color: var(--text);
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-top: 8px;
+            opacity: 0.8;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        .section {
+            background: var(--node);
+            border: 1px solid rgba(52, 211, 153, 0.2);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .section h2 {
+            margin-top: 0;
+            color: var(--primary);
+            font-size: 1.3em;
+            border-bottom: 1px solid rgba(52, 211, 153, 0.2);
+            padding-bottom: 10px;
+        }
+        .block-chain {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .block {
+            padding: 10px;
+            background: var(--block);
+            border: 1px solid var(--primary);
+            border-radius: 4px;
+            font-size: 0.85em;
+            position: relative;
+        }
+        .block:before {
+            content: "↑";
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            color: var(--primary);
+        }
+        .merkle-root {
+            color: var(--merkle);
+            font-family: monospace;
+            font-weight: bold;
+        }
+        .sla-alert {
+            background: rgba(239, 68, 68, 0.2);
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid var(--accent);
+            margin-top: 15px;
+            color: var(--accent);
+            font-weight: 800;
+            text-align: center;
+        }
+        .stat-line {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        .stat-val {
+            font-weight: 900;
+            color: var(--primary);
+        }
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            opacity: 0.6;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>REPUTATION LEDGER (M2M TRUST)</h1>
+            <div class="branding">David Akpoviroro Oke (MrIridescent) | Trust Layer 2026</div>
+        </header>
+
+        <div class="grid">
+            <div class="section">
+                <h2>1. Immutable Block Structure</h2>
+                <p>Verifiable record of agent interactions.</p>
+                <div class="block-chain">
+                    <div class="block">
+                        <strong>Block #02</strong><br>
+                        Root: <span class="merkle-root">e3b0c442...</span><br>
+                        <small>RSA-PSS SIGNED</small>
+                    </div>
+                    <div class="block">
+                        <strong>Block #01</strong><br>
+                        Root: <span class="merkle-root">a7f8e9c0...</span><br>
+                        <small>RSA-PSS SIGNED</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>2. SLA-Aware Scoring</h2>
+                <p>Dynamic reputation with slashing penalties.</p>
+                <div class="stat-line">
+                    <span>Researcher Success</span>
+                    <span class="stat-val">+10.0</span>
+                </div>
+                <div class="stat-line">
+                    <span>Executor Success</span>
+                    <span class="stat-val">+5.0</span>
+                </div>
+                <div class="sla-alert">
+                    SLA VIOLATION: -50.0 (SLASHED)
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>3. Performance Metrics</h2>
+                <p>Verifiable Trust for the Agentic Mesh.</p>
+                <div class="stat-line">
+                    <span>Risk Reduction</span>
+                    <span class="stat-val">85%</span>
+                </div>
+                <div class="stat-line">
+                    <span>Latency</span>
+                    <span class="stat-val">&lt; 5ms</span>
+                </div>
+                <div class="stat-line">
+                    <span>M2M Integrity</span>
+                    <span class="stat-val">Verified</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Architecture: Crypto-Reputation-v2.2 | Ref: D.A. Oke (2026) | AI's 2026 Trajectory: Truth & ROI
+        </div>
+    </div>
+</body>
+</html>

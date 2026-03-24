@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Federated Orchestrator Infographic (2026)</title>
+    <style>
+        :root {
+            --primary: #FFD700; /* Gold (Collaborative Training) */
+            --secondary: #1C1C1C; /* Dark Gray */
+            --accent: #FF4500; /* Orange Red (Dynamic) */
+            --text: #F0F8FF; /* Alice Blue */
+            --bg: #0D0D0D; /* Jet Black */
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            border: 2px solid var(--primary);
+            padding: 40px;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #111, #303000);
+            box-shadow: 0 0 50px rgba(255, 215, 0, 0.2);
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+        h1 { color: var(--primary); text-transform: uppercase; font-size: 2.5rem; letter-spacing: 5px; margin: 0; }
+        .branding { font-style: italic; color: #888; margin-top: 15px; font-size: 1.1rem; }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+        .card {
+            background: rgba(255,255,255,0.03);
+            padding: 25px;
+            border-radius: 12px;
+            border-top: 5px solid var(--primary);
+            transition: transform 0.3s ease;
+        }
+        .card:hover { transform: translateY(-10px); background: rgba(255,255,255,0.05); }
+        .card h2 { color: var(--primary); font-size: 1.3rem; margin-top: 0; }
+        
+        .visual-flow {
+            margin: 50px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .step {
+            padding: 20px;
+            border: 1px dashed var(--primary);
+            border-radius: 10px;
+            text-align: center;
+            width: 180px;
+            background: rgba(255, 215, 0, 0.05);
+        }
+        .arrow { font-size: 2rem; color: var(--primary); }
+
+        .performance-bar {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+        .perf-item {
+            flex: 1;
+        }
+        .perf-value { font-size: 2.8rem; font-weight: 900; color: var(--primary); }
+        .perf-label { font-size: 0.85rem; text-transform: uppercase; color: #aaa; letter-spacing: 1px; }
+        
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 1rem;
+            color: #444;
+            border-top: 1px solid #222;
+            padding-top: 30px;
+        }
+        .highlight { color: var(--primary); font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Flower Federated Orchestrator</h1>
+            <div class="branding">Architecture by David Akpoviroro Oke (MrIridescent)</div>
+        </header>
+
+        <div class="grid">
+            <div class="card">
+                <h2>1. Fed-LLM Collaborative Training</h2>
+                <p>Features <span class="highlight">Decentralized Model Aggregation</span>. Clients (Hospitals, Banks, Factories) co-train specialized models without raw data leaving the source.</p>
+            </div>
+            <div class="card">
+                <h2>2. FedAvg Secure Orchestration</h2>
+                <p>Mandates <span class="highlight">Aggregated Weight Re-Fusion</span>. The orchestrator produces a refined "Global Model" by securely averaging PQC-signed client updates.</p>
+            </div>
+            <div class="card">
+                <h2>3. Lattice-Based PQC Security</h2>
+                <p>Ensures <span class="highlight">Quantum-Resilient Model Integrity</span>. Rejects any non-PQC certified client updates to prevent model poisoning and unauthorized access.</p>
+            </div>
+        </div>
+
+        <div class="visual-flow">
+            <div class="step">Client Local Training (LoRA)</div>
+            <div class="arrow">➔</div>
+            <div class="step">Secure Update Submission (PQC)</div>
+            <div class="arrow">➔</div>
+            <div class="step">Orchestrator Aggregation (FedAvg)</div>
+            <div class="arrow">➔</div>
+            <div class="step">Global Model Broadcast</div>
+            <div class="arrow">➔</div>
+            <div class="step">Collaborative Model Mastery</div>
+        </div>
+
+        <div class="performance-bar">
+            <div class="perf-item">
+                <div class="perf-value">22%</div>
+                <div class="perf-label">Model Performance Gain</div>
+            </div>
+            <div class="perf-item">
+                <div class="perf-value">100%</div>
+                <div class="perf-label">PQC Rejection Rate</div>
+            </div>
+            <div class="perf-item">
+                <div class="perf-value">84.75%</div>
+                <div class="perf-label">User-Friendliness Score</div>
+            </div>
+            <div class="perf-item">
+                <div class="perf-value">Zero</div>
+                <div class="perf-label">Data Leakage</div>
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2026 David Akpoviroro Oke (MrIridescent) | Strategic AI Portfolio | The Creative Renaissance Man
+        </footer>
+    </div>
+</body>
+</html>

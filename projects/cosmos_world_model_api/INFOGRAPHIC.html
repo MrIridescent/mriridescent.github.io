@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmos World Model API Infographic (2026)</title>
+    <style>
+        :root {
+            --primary: #76B900; /* NVIDIA Green */
+            --secondary: #1A1A1A; /* Deep Space */
+            --accent: #00A3E0; /* Electric Blue */
+            --text: #F8F8F8; /* Arctic White */
+            --bg: #050505; /* Black */
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            border: 2px solid var(--primary);
+            padding: 40px;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #111, #002e1a);
+            box-shadow: 0 0 50px rgba(118, 185, 0, 0.2);
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+        h1 { color: var(--primary); text-transform: uppercase; font-size: 2.5rem; letter-spacing: 5px; margin: 0; }
+        .branding { font-style: italic; color: #888; margin-top: 15px; font-size: 1.1rem; }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+        .card {
+            background: rgba(255,255,255,0.03);
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 5px solid var(--primary);
+            transition: all 0.3s ease;
+        }
+        .card:hover { transform: scale(1.02); background: rgba(255,255,255,0.05); }
+        .card h2 { color: var(--primary); font-size: 1.3rem; margin-top: 0; }
+        
+        .visual-flow {
+            margin: 50px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .step {
+            padding: 20px;
+            border: 1px dashed var(--primary);
+            border-radius: 10px;
+            text-align: center;
+            width: 180px;
+            background: rgba(118, 185, 0, 0.05);
+        }
+        .arrow { font-size: 2rem; color: var(--primary); }
+
+        .performance-bar {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+        .perf-item {
+            flex: 1;
+        }
+        .perf-value { font-size: 2.8rem; font-weight: 900; color: var(--primary); }
+        .perf-label { font-size: 0.85rem; text-transform: uppercase; color: #aaa; letter-spacing: 1px; }
+        
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 1rem;
+            color: #444;
+            border-top: 1px solid #222;
+            padding-top: 30px;
+        }
+        .highlight { color: var(--primary); font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cosmos World Model API</h1>
+            <div class="branding">Architecture by David Akpoviroro Oke (MrIridescent)</div>
+        </header>
+
+        <div class="grid">
+            <div class="card">
+                <h2>1. Cosmos Curator</h2>
+                <p>Automated <span class="highlight">DataOps</span> for high-bandwidth sensor streams. Filters, annotates, and deduplicates 20+ camera/LiDAR feeds in real-time.</p>
+            </div>
+            <div class="card">
+                <h2>2. Cosmos Predict</h2>
+                <p>Generative <span class="highlight">World-State Simulation</span>. Predicts the physical future up to 30 seconds ahead to eliminate the sim-to-real gap.</p>
+            </div>
+            <div class="card">
+                <h2>3. Cosmos Reason</h2>
+                <p>Multimodal <span class="highlight">Chain-of-Thought (CoT)</span> for space-time logic. Interprets physical common sense for embodied agents (Humanoids/AMRs).</p>
+            </div>
+        </div>
+
+        <div class="visual-flow">
+            <div class="step">Raw Sensor Input (LiDAR/Cam)</div>
+            <div class="arrow">➔</div>
+            <div class="step">Curator (Data Selection)</div>
+            <div class="arrow">➔</div>
+            <div class="step">Predict (World Imagination)</div>
+            <div class="arrow">➔</div>
+            <div class="step">Reason (Embodied Logic)</div>
+            <div class="arrow">➔</div>
+            <div class="step">Robot Action</div>
+        </div>
+
+        <div class="performance-bar">
+            <div class="perf-item">
+                <div class="perf-value">94.5%</div>
+                <div class="perf-label">Predictive Accuracy</div>
+            </div>
+            <div class="perf-item">
+                <div class="perf-value"><45ms</div>
+                <div class="perf-label">Reasoning Latency</div>
+            </div>
+            <div class="perf-item">
+                <div class="perf-value">700 TOPS</div>
+                <div class="perf-label">Edge Throughput</div>
+            </div>
+            <div class="perf-item">
+                <div class="perf-value">20+</div>
+                <div class="perf-label">Sensors per Stream</div>
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2026 David Akpoviroro Oke (MrIridescent) | Strategic AI Portfolio | The Creative Renaissance Man
+        </footer>
+    </div>
+</body>
+</html>

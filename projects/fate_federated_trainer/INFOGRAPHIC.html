@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FATE-LLM Federated Trainer Infographic - David Akpoviroro Oke</title>
+    <style>
+        :root {
+            --primary: #4CAF50;
+            --secondary: #03A9F4;
+            --background: #121212;
+            --text: #ffffff;
+            --accent: #FF9800;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background);
+            color: var(--text);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            width: 80%;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 1200px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            border-left: 5px solid var(--secondary);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+        .card h3 {
+            color: var(--primary);
+            margin-top: 0;
+        }
+        .step {
+            font-weight: bold;
+            color: var(--accent);
+            margin-right: 5px;
+        }
+        .branding {
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #888;
+            text-align: center;
+        }
+        .process-flow {
+            margin: 40px 0;
+            padding: 20px;
+            background: #1a1a1a;
+            border-radius: 15px;
+            width: 90%;
+            text-align: center;
+        }
+        .process-step {
+            display: inline-block;
+            padding: 15px 25px;
+            background: var(--primary);
+            border-radius: 25px;
+            margin: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>FATE-LLM Federated Trainer</h1>
+        <p>2026 Sovereign AI Strategy by <strong>David Akpoviroro Oke (MrIridescent)</strong></p>
+    </div>
+
+    <div class="process-flow">
+        <div class="process-step">Local Node (Data)</div>
+        <div class="process-step">LoRA Weight Update</div>
+        <div class="process-step">Encrypted Submission</div>
+        <div class="process-step">Global Sovereign Model</div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h3>Sovereign Local Training</h3>
+            <p><span class="step">01.</span> Data remains in air-gapped environment; only weights are updated via LoRA ($r=8$).</p>
+        </div>
+        <div class="card">
+            <h3>Secure Weight Exchange</h3>
+            <p><span class="step">02.</span> Encrypted updates sent to the coordinator using PQC-hardened protocols (Kyber-1024).</p>
+        </div>
+        <div class="card">
+            <h3>Robust FedAvg Aggregation</h3>
+            <p><span class="step">03.</span> The global model is updated by merging decentralized insights while ensuring privacy.</p>
+        </div>
+        <div class="card">
+            <h3>Differential Privacy (DP)</h3>
+            <p><span class="step">04.</span> Mathematical noise is added to the updates to prevent data reverse-engineering.</p>
+        </div>
+    </div>
+
+    <div class="branding">
+        <p>Strategic Design: David Akpoviroro Oke | MrIridescent</p>
+        <p>Ref: FATE, WeBank Open Source, 2026 AI Developer Workflow</p>
+    </div>
+</body>
+</html>
