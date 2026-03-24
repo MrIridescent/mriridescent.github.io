@@ -10,7 +10,7 @@ As agents begin to autonomously negotiate, transact, and self-govern via **Agent
 - **Business Impact**: Total Cost of Ownership (TCO) for administrative workflows reduced by 40% through **Autonomous Administrative Intelligence (AAI)**.
 
 ## ⚖️ 2. Domain-Specific Language Models (DSLMs) & Reasoning Distillation
-The shift from general-purpose models to specialized **DSLMs** is driving 10X efficiency in mission-critical sectors.
+The shift from general-purpose models to specialized **DSLMs** is driving significant efficiency in mission-critical sectors.
 - **ROI Metric**: 80% reduction in training and fine-tuning costs via **Reasoning Distillation**.
 - **Success Rate**: Very High (95% for DSLMs in Med-Legal and Industrial-Fail-Safe sectors).
 - **Disruptive Niche**: **Logical Inference Designer** (Neuro-Symbolic AI).
@@ -43,10 +43,10 @@ Weaponizing data for economic sovereignty and inter-sovereign intelligence.
 
 | Niche | Success Rate | ROI Potential | TTM (Time-To-Market) |
 | :--- | :--- | :--- | :--- |
-| **Agentic Mesh** | 92% | 10X | 6–12 Months |
-| **DSLM Specialization** | 95% | 8X | 3–6 Months |
-| **Edge NPU Optimization** | 88% | 15X | 12–18 Months |
-| **Bio-AI Convergence** | 65% | 20X | 24–36 Months |
-| **AI Diplomacy** | 70% | 5X | 18–24 Months |
+| **Agentic Mesh** | 92% | Significant | 6–12 Months |
+| **DSLM Specialization** | 95% | High | 3–6 Months |
+| **Edge NPU Optimization** | 88% | Maximum | 12–18 Months |
+| **Bio-AI Convergence** | 65% | High | 24–36 Months |
+| **AI Diplomacy** | 70% | Moderate | 18–24 Months |
 
 **"The value has shifted from the creation of the brain (the model) to the governance of the limbs (the agentic mesh) and the sustainability of the pulse (the energy-efficient infrastructure)."**

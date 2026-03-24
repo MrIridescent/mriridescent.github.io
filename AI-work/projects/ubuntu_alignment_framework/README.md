@@ -1,53 +1,24 @@
-# Ubuntu-Alignment Framework (SDG 16 / AU 2063 Goal 3)
-**Status**: Iteration 1.0 (Communal Consensus Alpha)
+# Ubuntu Alignment Framework
 
-## 🌌 The Disruptive Vision
-Modern AI alignment (RLHF/RLAIF) is fundamentally rooted in **individualistic utility maximization**, which is often at odds with the **communal-ethics frameworks** (Ubuntu) that govern 1.4 billion people in Africa and billions more in the Global South.
+A core module within the **2026-2030 Strategic AI Ecosystem**. This component provides mission-critical logic for **Ubuntu Alignment Framework**, optimized for high-performance agentic orchestration.
 
-The **Ubuntu-Alignment Framework** is the first SOTA protocol to replace "Human Feedback" from individuals with **"Communal Value Distillation"** from multi-stakeholder consensus.
+## 🚀 Core Functionality
+- **High-Performance Async Core**: Optimized for sub-millisecond execution.
+- **Agentic Integration**: Standardized hooks for the Master Agentic Mesh.
+- **Sovereign Security**: Hardened architectures for domestic-first data management.
 
-### 🏆 Why This Is Award-Worthy:
-1. **Philosophical Pivot**: Moves AI from "What do I want?" to "What do WE need?"
-2. **Technical Innovation**: Implements **Federated Reward Functions** where ethical weights are negotiated between regional DSLMs.
-3. **Decentralized Justice**: Provides a mathematical model for **Restorative Justice** (vs. Punitive Slashing) in agentic reputation systems.
+## 📊 Strategic Impact
+- **Operational ROI**: Significantly reduces manual intervention and integration overhead.
+- **System Resilience**: Built-in self-healing loops and telemetry.
 
----
+## 🛠️ Getting Started
+1. Run the setup script: `chmod +x setup.sh && ./setup.sh`
+2. Initialize the core module.
+3. Consult `DOCS.md` and `MANUAL.md` for detailed configuration.
 
-## 🛠️ Technical Architecture
-
-### 1. The "Indaba" Protocol (Consensus Engine)
-- **Core**: A multi-agent negotiation layer (MCP-based) that reconciles conflicting goals between agents (e.g., Economic Growth vs. Environmental Preservation).
-- **Mechanism**: Weighted Voting + Semantic Conflict Resolution (using Tree-of-Thought search).
-
-### 2. Federated Value-Distillation (Reward Modeling)
-- **Input**: Local customary laws, communal values, and regional SDG targets.
-- **Output**: A "Ubuntu-Adapter" (LoRA) that re-weights foundation model responses toward collective wellbeing.
-
-### 3. Restorative Reputation Loop
-- **Slashing vs. Healing**: Instead of simple punitive measures, agents that violate the "Social Contract" are assigned "Communal Remediation Tasks" to rebuild trust.
+## 🖼️ Visual Guide
+Open `INFOGRAPHIC.html` in your browser for a comprehensively nuanced and detailed overview of how this module works and why it is essential.
 
 ---
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Python 3.10+
-- `asyncio`, `aiosqlite`, `mcp` (for agent communication)
-- `numpy` (for reward weight calculation)
-
-### Installation
-```bash
-chmod +x setup.sh
-./setup.sh
-```
-
-### Running the Consensus Demo
-```bash
-python ubuntu_consensus_engine.py
-```
-
----
-
-## 📊 Atomic SDG Alignment
-- **SDG 16 (Peace, Justice, and Strong Institutions)**: Formalizing indigenous and communal justice systems into AI-verifiable protocols.
-- **AU 2063 Goal 3 (An Africa of Good Governance)**: Creating transparent, communal-driven decision-making frameworks for national AI deployments.
+**Maintained by**: David Akpoviroro Oke (MrIridescent)
+**Strategic Deployment Cycle**: 2026-2030

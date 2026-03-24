@@ -17,7 +17,7 @@ class BitWidth(Enum):
     FP32 = 32
 
 class QuantizationSimulator:
-    """Iteration 1 & 2: QAT Simulation & Bit-Width Flexibility."""
+    """Strategic Advancement 1 & 2: QAT Simulation & Bit-Width Flexibility."""
     
     def simulate_quantization(self, weights: np.ndarray, bit_width: BitWidth = BitWidth.INT8) -> np.ndarray:
         logger.info(f"Simulating {bit_width.name} Quantization on {len(weights)} parameters...")

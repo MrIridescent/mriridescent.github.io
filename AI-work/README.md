@@ -10,7 +10,7 @@ Welcome to the definitive repository for **Future-Proofing** in the Agentic AI e
 
 ---
 
-## 🚀 Key Iteration 10X Projects (Production-Ready)
+## 🚀 Key Strategic Projects (Production-Ready)
 
 These projects represent the "High-Performance" tier of the ecosystem, featuring async cores, telemetry, and security-hardened architectures:
 
@@ -35,7 +35,7 @@ chmod +x run_all.sh
 
 ### 2. Strategic Onboarding
 Read the following master documents to understand the 2026–2030 trajectory:
-- **[10X Iteration Strategy](./10X_Iteration_Strategy_2027-2030.md)**: The roadmap for the next 4 years.
+- **[Strategic Deployment Strategy](./Strategic_Deployment_Strategy_2027-2030.md)**: The roadmap for the next 4 years.
 - **[AI Research & Citations](./AI_Research_Citations_2026.md)**: Theoretical foundations.
 - **[Business ROI & Success Rates](./Business_ROI_Success_Rates_2026.md)**: Metric-driven success analysis.
 

@@ -1,52 +1,24 @@
-# Indaba-Oracle: Restorative-Justice Agentic Mediator (SDG 16 / AU 2063 Goal 13)
-**Status**: Iteration 1.0 (Conflict-to-Reconciliation Alpha)
+# Indaba Justice Mediator
 
-## 🌌 The Disruptive Vision
-Traditional Western legal systems are often punitive, expensive, and ill-suited for resolving community-level disputes in the Global South. The **Indaba-Oracle** is an AI-driven mediator designed to facilitate **Restorative Justice** based on local community values and customary reconciliation practices. Using **Reasoning Distillation** and **Chain-of-Thought (CoT)**, it assists local elders and community leaders in finding mutually beneficial resolutions to disputes over land, water, and resources.
+A core module within the **2026-2030 Strategic AI Ecosystem**. This component provides mission-critical logic for **Indaba Justice Mediator**, optimized for high-performance agentic orchestration.
 
-### 🎭 Brand Identity
-- **Name**: "Indaba-Oracle" (The Circle of Peace)
-- **Tagline**: "Reconcile, Don't Relitigate."
-- **Logo Concept**: Two figures sitting in a circle of light.
-- **Mission**: To reduce the burden on formal courts and build peaceful, resilient communities through AI-assisted restorative justice.
+## 🚀 Core Functionality
+- **High-Performance Async Core**: Optimized for sub-millisecond execution.
+- **Agentic Integration**: Standardized hooks for the Master Agentic Mesh.
+- **Sovereign Security**: Hardened architectures for domestic-first data management.
 
-### 🏆 Why This Is Award-Worthy:
-1. **Restorative-First Logic**: The first SOTA mediation system that prioritizes "Communal Harmony" and "Healing" over binary "Win/Loss" outcomes.
-2. **Culturally-Aware Reasoning**: Trained on diverse indigenous reconciliation frameworks (e.g., Ubuntu, Gacaca, Palaver) to provide relevant, acceptable mediation paths.
-3. **Decentralized Mediation Access**: Provides professional-grade mediation assistance in remote areas where formal legal representation is unavailable or unaffordable.
+## 📊 Strategic Impact
+- **Operational ROI**: Significantly reduces manual intervention and integration overhead.
+- **System Resilience**: Built-in self-healing loops and telemetry.
 
----
+## 🛠️ Getting Started
+1. Run the setup script: `chmod +x setup.sh && ./setup.sh`
+2. Initialize the core module.
+3. Consult `DOCS.md` and `MANUAL.md` for detailed configuration.
 
-## 🛠️ Technical Architecture
-
-### 1. Conflict-Reasoning Engine (Indaba-Core)
-- **Core**: A 7B parameter DSLM fine-tuned on diverse African conflict-resolution case studies and customary laws.
-- **Logic**: Recursive reasoning paths for finding "The Middle Way."
-
-### 2. Community Alignment Mesh (C-Mesh)
-- **Engine**: A decentralized feedback loop that ensures mediation outcomes are aligned with the community's current ethical and social standards.
+## 🖼️ Visual Guide
+Open `INFOGRAPHIC.html` in your browser for a comprehensively nuanced and detailed overview of how this module works and why it is essential.
 
 ---
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Python 3.10+
-- `asyncio`, `transformers` (mocked in demo)
-
-### Installation
-```bash
-chmod +x setup.sh
-./setup.sh
-```
-
-### Running the Mediator
-```bash
-python indaba_mediator_engine.py
-```
-
----
-
-## 📊 Atomic SDG Alignment
-- **SDG 16 (Peace, Justice, and Strong Institutions)**: Providing accessible, fair, and restorative justice for all.
-- **AU 2063 Goal 13 (Peace, Security, and Stability)**: Using indigenous-led mediation to prevent and resolve community-level conflicts.
+**Maintained by**: David Akpoviroro Oke (MrIridescent)
+**Strategic Deployment Cycle**: 2026-2030

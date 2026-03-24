@@ -1,35 +1,24 @@
-# **AIMET Quantization Simulator**
-**Creator**: David Akpoviroro Oke (**MrIridescent**)  
-**The Creative Renaissance Man**
+# Aimet Quantization Sim
 
-## **Overview**
-The **AIMET Quantization Simulator** is a 2026 AI efficiency framework designed to optimize deep learning models for ultra-low-power NPU execution. By simulating the effects of lower precision (INT8/INT4) during the development phase, this tool enables the creation of high-authority models for embedded and physical AI, ensuring maximum accuracy retention at minimum power consumption.
+A core module within the **2026-2030 Strategic AI Ecosystem**. This component provides mission-critical logic for **Aimet Quantization Sim**, optimized for high-performance agentic orchestration.
 
-## **Core Features**
-- **Quantization Simulation (QuantSim)**: Inserts observer nodes into the model graph to simulate lower precision.
-- **Cross-Layer Equalization (CLE)**: A Data-Free Quantization (DFQ) technique that balances weights across layers.
-- **Automated Encodings Calculation**: Determines the optimal scale and offset for each layer via calibration data.
-- **NPU-Aware Optimization**: Optimized for the **Qualcomm Dragonwing IQ** NPU architecture.
+## 🚀 Core Functionality
+- **High-Performance Async Core**: Optimized for sub-millisecond execution.
+- **Agentic Integration**: Standardized hooks for the Master Agentic Mesh.
+- **Sovereign Security**: Hardened architectures for domestic-first data management.
 
-## **Quick Start**
-```bash
-# 1. Initialize the AIMET Quantization Simulator
-python aimet_simulator.py
+## 📊 Strategic Impact
+- **Operational ROI**: Significantly reduces manual intervention and integration overhead.
+- **System Resilience**: Built-in self-healing loops and telemetry.
 
-# 2. Run the quantization workflow
-# The system will automatically calibrate the model and export INT8/INT4 weights.
-```
+## 🛠️ Getting Started
+1. Run the setup script: `chmod +x setup.sh && ./setup.sh`
+2. Initialize the core module.
+3. Consult `DOCS.md` and `MANUAL.md` for detailed configuration.
 
-## **Portfolio Documentation Suite**
-- [./DOCS.md](./DOCS.md): Strategic research, DFQ techniques, and Smart Agriculture/Humanoid use cases.
-- [./MANUAL.md](./MANUAL.md): Step-by-Step implementation for high-authority AI infrastructure.
-- [./INFOGRAPHIC.html](./INFOGRAPHIC.html): Granular architectural visualization.
-- [./aimet_simulator.py](./aimet_simulator.py): 2026 production-grade quantization implementation.
-
-## **2026 Operational ROI**
-- **8x reduction in model size** (FP32 to INT4).
-- **10+ years battery life** for smart edge sensors via INT4 optimization.
-- **0.5ms reflex response time** for humanoid balance control using INT8 NPU acceleration.
+## 🖼️ Visual Guide
+Open `INFOGRAPHIC.html` in your browser for a comprehensively nuanced and detailed overview of how this module works and why it is essential.
 
 ---
-**Branding**: David Akpoviroro Oke | MrIridescent | Strategic AI Portfolio 2026
+**Maintained by**: David Akpoviroro Oke (MrIridescent)
+**Strategic Deployment Cycle**: 2026-2030

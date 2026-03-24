@@ -11,7 +11,7 @@ The **Federated Gray-Box Distillation** project is a collaborative training prot
 This project implements a **Gray-Box** approach, where organizations collaborate on a global student model by sharing obfuscated gradients and reasoning pathways rather than raw data. Research shows that this collaborative training method allows smaller student models (e.g., 7B parameter models) to replicate 95% of the performance of frontier-grade teachers (e.g., GPT-5 class) while keeping sensitive training data local and secure.
 
 ### **Key Research Citations:**
-1.  **"AI Authority: Disruptive Niches & Iterations"** (Federated Gray-Box Distillation niche).
+1.  **"AI Authority: Disruptive Niches & s"** (Federated Gray-Box Distillation niche).
 2.  **"DSLM Authority Roadmap: Reasoning, Coordination, and Execution"** (Teacher-student reasoning pathways).
 3.  **"AI's 2026 Trajectory: Truth & ROI"** (Sovereign AI & Geopatriation).
 4.  **Fed-LLM Research** (Collaborative training for industrial manufacturing).

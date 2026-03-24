@@ -6,7 +6,7 @@ This directory serves as the central repository for marketing assets, research d
 *Focus: Theoretical and empirical foundations for the 2026–2030 AI landscape.*
 - **[AI Research & Citations: 2026-2030](../AI_Research_Citations_2026.md)**: Comprehensive guide with citations on Agentic AI, DSLMs, and NPU-aware inference.
 
-## 📰 2. Strategic Deep-Dive Articles (10X Suite)
+## 📰 2. Strategic Deep-Dive Articles (Strategic Suite)
 *Focus: Domain-specific narrative assets for authority-building across all "Directions of Life."*
 
 ### 🏗️ Agentic Infrastructure & Trust
@@ -50,7 +50,7 @@ This directory serves as the central repository for marketing assets, research d
 
 ## 🚀 Usage Strategy
 1. **The Research Phase**: Utilize the **Research & Citations** document to ground all marketing claims in industry-standard citations.
-2. **The Narrative Phase**: Deploy the **10X Strategic Articles** on high-authority platforms to establish precognitive authority.
+2. **The Narrative Phase**: Deploy the **Strategic Deployment Articles** on high-authority platforms to establish precognitive authority.
 3. **The Distribution Phase**: Use the **Social Media Templates** to drive viral and professional engagement.
 4. **The Conversion Phase**: Leverage the **Business ROI Report** to close enterprise and sovereign-level engagements.
 

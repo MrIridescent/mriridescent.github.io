@@ -1,4 +1,4 @@
-# MLE Evolution Agent - Iteration 10 (High-Performance Async)
+# MLE Evolution Agent - Version 1.0 (High-Performance Async)
 # Acts as an "expert Machine Learning Engineer" discovering novel reward functions.
 # Production Features: Asyncio orchestration, NPU telemetry, and adaptive evolution loops.
 
@@ -10,7 +10,7 @@ from typing import List, Dict, Any, Optional
 from dataclasses import dataclass, asdict
 
 # 2026 Production Logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] MLE-Agent-10X: %(message)s')
+logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] MLE-Agent-PRO: %(message)s')
 logger = logging.getLogger(__name__)
 
 @dataclass
@@ -19,7 +19,7 @@ class TelemetryData:
     npu_utilization: float
     sram_usage_mb: int
     thermal_status: str
-    iteration_latency_ms: float
+    cycle_latency_ms: float
 
 class MLE_Agent:
     def __init__(self, target_model: str):
@@ -29,7 +29,7 @@ class MLE_Agent:
         self.reward_functions = {
             "v1": "accuracy * (1 - energy_cost)",
             "v2": "accuracy * (1 / latency_ms)",
-            "v10": "accuracy * log(engagement) * exp(-carbon_footprint)"
+            "v_latest": "accuracy * log(engagement) * exp(-carbon_footprint)"
         }
 
     async def _get_npu_telemetry(self) -> TelemetryData:
@@ -39,7 +39,7 @@ class MLE_Agent:
             npu_utilization=random.uniform(40.0, 85.0),
             sram_usage_mb=random.randint(128, 512),
             thermal_status="OPTIMAL" if random.random() > 0.1 else "THROTTLED",
-            iteration_latency_ms=random.uniform(1.2, 4.5)
+            cycle_latency_ms=random.uniform(1.2, 4.5)
         )
 
     async def generate_hypothesis(self, failure_logs: str) -> str:
@@ -88,7 +88,7 @@ class MLE_Agent:
         logger.info("Evolution loop completed. Telemetry synced.")
 
 async def main():
-    agent = MLE_Agent("DSLM-7B-Health-V10")
+    agent = MLE_Agent("DSLM-7B-Health-PRO")
     await agent.run_evolution_loop()
 
 if __name__ == "__main__":
