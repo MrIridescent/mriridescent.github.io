@@ -35,9 +35,30 @@ chmod +x run_all.sh
 
 ### 2. Strategic Onboarding
 Read the following master documents to understand the 2026–2030 trajectory:
+
+#### 🔬 Strategic Deep Dives (Research & ROI)
+- **[DD1: Agentic Mesh & Universal Orchestration](./deep-dives/DD1_Agentic_Mesh.md)**
+- **[DD2: DSLM (Domain-Specific Language Models) Mastery](./deep-dives/DD2_DSLM_Mastery.md)**
+- **[DD3: Bio-Digital Twins & Longevity Informatics](./deep-dives/DD3_Bio_Digital_Twins.md)**
+- **[DD4: Physical AI & Embodied Intelligence](./deep-dives/DD4_Physical_AI.md)**
+- **[DD5: NPU-Native Edge Computing & TinyML](./deep-dives/DD5_NPU_Edge_Computing.md)**
+- **[DD6: Sovereign Trade & AfCFTA Digital Integration](./deep-dives/DD6_Sovereign_Trade.md)**
+- **[DD7: Exo-Sovereignty & The Space Data Economy](./deep-dives/DD7_Exo_Sovereignty.md)**
+- **[DD8: Civic Mesh & Liquid Democratic Infrastructure](./deep-dives/DD8_Civic_Mesh.md)**
+- **[DD9: Green-Ops & Sustainable AI Lifecycle](./deep-dives/DD9_Green_Ops.md)**
+- **[DD10: M2M Reputation & Trust Protocols](./deep-dives/DD10_M2M_Reputation.md)**
+
+#### 📜 Theoretical Foundations
 - **[Strategic Deployment Strategy](./Strategic_Deployment_Strategy_2027-2030.md)**: The roadmap for the next 4 years.
 - **[AI Research & Citations](./AI_Research_Citations_2026.md)**: Theoretical foundations.
 - **[Business ROI & Success Rates](./Business_ROI_Success_Rates_2026.md)**: Metric-driven success analysis.
+
+---
+
+## 🏛️ Strategic Offerings & Capabilities
+
+**To My Potential Benefactors and Partners in Industry:**
+Explore the **[Strategic Offerings & Capabilities Profile](./strategic-offerings.html)**—a high-fidelity articulation of my expertise in AI orchestration, sovereign infrastructure, and bio-digital innovation, inspired by the timeless strategic vision of Leonardo da Vinci.
 
 ---
 
